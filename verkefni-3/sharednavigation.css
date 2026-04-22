@@ -1,0 +1,34 @@
+.sharedNav {
+    background-color: antiquewhite;
+    display: grid;
+    padding: 1rem 1rem;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: .5rem;
+}
+
+.sharedNav a,
+.sharedNav h1 {
+    font-size: 1em;
+	font-weight: bold;
+}
+
+.sharedNav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sharedNav a:link {
+    color: brown;
+}
+
+.sharedNav a:visited {
+    color: lightslategray;
+}
+
+.sharedNav a:hover,
+.sharedNav a:active {
+    color: violet;
+    background-color: lemonchiffon;
+}

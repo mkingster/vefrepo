@@ -1,0 +1,73 @@
+hr,
+body {
+	font-family: system-ui;
+	background-color: white;
+	color: black;
+}
+
+.split4,
+.split3,
+.split2 {
+    display: grid;
+    border: 1px solid;
+    padding: .5rem;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.split4 div,
+.split3 div,
+.split2 div {
+    border: 1px solid;
+    padding: 0rem 1rem;
+}
+
+/* the page will change to match this style when at or wider than 768px. */
+/* tablet, 768px below */
+@media only screen and (min-width: 48rem) { /* min-width is the breakpoint */
+	hr,
+    body {
+	    background-color: lightblue;
+		color: black;
+	}
+    .split4,
+    .split2 {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+/* laptop, 960px */
+@media only screen and (min-width: 60rem) {
+	hr,
+    body {
+		background-color: blue;
+		color: white;
+	}
+    .split3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* desktop, 1280px */
+@media only screen and (min-width: 80rem) {
+	hr,
+    body {
+		background-color: darkblue;
+		color: white;
+	}
+    .split4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 1600px+ width */
+@media only screen and (min-width: 100rem) {
+	hr,
+    body {
+        background-color: black;
+		color: white;
+		max-width: 100rem; 
+		margin: 0 auto;  /* efni body miðjusett */ 
+	}
+}
+

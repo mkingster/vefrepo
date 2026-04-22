@@ -1,0 +1,210 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 355;
+    font-style: normal;
+    background-color: darkblue;
+    background-image: linear-gradient(to left, darkblue, blue);
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 2rem;
+}
+
+header h1 {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    padding: 0rem 1rem;
+}
+
+article {
+    margin: 0rem 0.5rem;
+    padding: 1rem 0rem;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0;
+}
+
+.verkefni {
+    text-align: right;
+    padding: 0rem 1rem;
+    font-style: oblique;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.main-bg {
+    background-color: bisque;
+    color: rgb(67, 67, 67);
+}
+
+blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid black;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+.articles {
+    grid-area: articles;
+}
+
+.aside-menu {
+    display: flex;
+    grid-area: aside-menu;
+    top: 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.aside-menu a {
+    padding: 4px 8px;
+}
+
+.sticky-menu {
+    display: block;
+    position: sticky;
+    top: 0;
+    background: bisque;
+    padding: 1rem 0;
+    font-weight: 700;
+}
+
+.padd-top-7 article {
+    padding-top: 7rem;
+}
+
+.padd-top-7 article:first-child {
+    padding-top: 0rem;
+}
+
+.padd-top-7 article:last-child {
+    padding-bottom: 3rem;
+}
+
+.col-31 {
+    display: grid;
+    grid-template-areas:
+    "aside-menu"
+    "articles";
+    column-gap: 3rem;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+}
+
+.bodoni {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.bodoni h1 {
+    font-family: "Libre Bodoni", serif;
+}
+
+.col-2,
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer nav {
+    padding: 0rem 1rem;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer a:before {
+    content: "⇲ ";
+}
+
+footer a:link {
+    color: white;
+}
+
+footer a:visited {
+    color: lightgray;
+}
+
+footer a:hover,
+footer a:active {
+    color: red
+}
+
+footer h4 {
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.center {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-31 {
+    display: grid;
+    grid-template-areas:
+        "articles articles articles sticky-menu";
+    
+    }
+    .aside-menu {
+        flex-flow: column;
+        padding: 2.6rem;
+    }
+    .padd-top-7 article {
+    padding-top: 0;
+    }
+}
+
+@media (min-width: 960px) {
+}

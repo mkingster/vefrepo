@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v2.1-2.3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--verkefni 2.1-->
+    <h1 class="box1">The Box Model</h1>
+    <div class="marginBox">
+        <h1 class="box2">Box Model 2</h1>
+    </div>
+    <div class="marginBox">
+        <h1 class="box3">Box Model 3</h1>
+    </div>
+
+    <hr>
+<!--verkefni 2.2-->
+    <b>
+        this is a list using display: block
+    </b>
+    <ul>
+        <li class="listBoxBlock">List item 1</li>
+        <li class="listBoxBlock">List item 2</li>
+        <li class="listBoxBlock">List item 3</li>
+        <li class="listBoxBlock">List item 4</li>
+    </ul>
+
+    <b>
+        this is a list using display: inline
+    </b>
+    <ul>
+        <li class="listBoxInLine">List item 1</li>
+        <li class="listBoxInLine">List item 2</li>
+        <li class="listBoxInLine">List item 3</li>
+        <li class="listBoxInLine">List item 4</li>
+        <li class="listBoxInLine">List item 5</li>
+        <li class="listBoxInLine">List item 6</li>
+        <li class="listBoxInLine">List item 7</li>
+    </ul>
+    <p>
+        notice how the top and bottom margins just don't work at all
+    </p>
+    <b>
+        this is a list using display: inline-block
+    </b>
+    <ul>
+        <li class="listBoxInLineBlock">List item 1</li>
+        <li class="listBoxInLineBlock">List item 2</li>
+        <li class="listBoxInLineBlock">List item 3</li>
+        <li class="listBoxInLineBlock">List item 4</li>
+        <li class="listBoxInLineBlock">List item 5</li>
+        <li class="listBoxInLineBlock">List item 6</li>
+        <li class="listBoxInLineBlock">List item 7</li>
+    </ul>
+<!--verkefni 2.3-->
+
+<h1>Float elements</h1>
+
+<div class="floatContainer">
+
+    <!-- left box -->
+    <div class="floatBox leftFloat">
+        <h2>Box með upphafsstaf</h2>
+
+        <p>
+            <span class="dropcap">L</span>
+            orem ipsum dolor sit amet consectetur adipisicing elit. Quae quod ullam officiis aut consequuntur inventore laboriosam ea, maiores quia illum non recusandae dolore laudantium libero temporibus maxime sit accusantium? Sed.
+        </p>
+    </div>
+
+    <!-- right box -->
+    <div class="floatBox rightFloat">
+        <h2>Box með mynd inn í texta</h2>
+
+        <img src="cat.jpg" class="floatImage">
+
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, earum. Molestias suscipit ipsum perspiciatis modi error similique neque temporibus ipsa minima assumenda praesentium facilis quo culpa fuga, blanditiis optio aliquam.
+        </p>
+    </div>
+
+</div>
+
+<div class="clearFloat"></div>
+
+<div class="warningBox">
+
+    <div class="warningTitle">
+        Do not use <i>float</i> in the website layout.
+    </div>
+
+    <p>
+        use <b>flexbox / grid</b> instead.
+    </p>
+
+</div>
+</body>
+</html>

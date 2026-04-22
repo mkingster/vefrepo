@@ -1,0 +1,74 @@
+html {
+    background-color: #ecf8ff;
+    --text: #1b1b1b;
+    --h2text: #007acc;
+    --h3text: #005892;
+    --font: system-ui;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 80rem;    
+    margin: 0 auto;
+
+}
+
+body {
+    padding: 1rem 6rem;
+    font-family: var(--font);
+    justify-content: center;
+    border: 1px solid #0000004c;
+}
+
+h2 {
+    color: var(--h2text);
+    text-shadow: 2px 2px 10px #0000004c
+}
+
+h3{
+    color: var(--h3text);
+    text-shadow: 2px 2px 8px #0000004c
+}
+
+p {
+    margin: 0 0 1.25rem;
+    font-family: serif;
+    color: var(--text);
+}
+
+hr {
+    border: solid;
+    height: 1px;
+    background: var(--text);
+    margin: 2rem 0;
+}
+
+  a:link {
+    color: blue;
+    font-weight: bold;
+    font-family: monospace;
+}
+  a:visited {
+    color:purple;
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  a:hover,
+  a:active {
+    color: red;
+    font-weight: bold;
+  }
+
+pre {
+    font-size: 12px;
+}
+
+.song {
+    background-color: #ffffff;
+    border: 1px solid #0000004c;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.song em {
+    color: #007acc;
+}

@@ -1,0 +1,48 @@
+.sharedNav {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    max-width: 100%;
+    gap: 0.5rem;
+}
+
+.sharedNav h1 {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.sharedNav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.sharedNav a:link {
+    color: brown;
+}
+
+.sharedNav a:visited {
+    color: lightslategray;
+}
+
+.sharedNav a:hover,
+.sharedNav a:active {
+    color: violet;
+    background-color: lemonchiffon;
+}
+
+@media screen and (min-width: 768px) {
+	.sharedNav {
+    	flex-direction: row;
+        flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.sharedNav {
+    	flex-wrap: nowrap;
+	}
+}
