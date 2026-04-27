@@ -175,6 +175,10 @@ footer h4 {
     padding: 1rem 0;
 }
 
+.header-button {
+    color: white;
+}
+
 .center {
     text-align: center;
 }
