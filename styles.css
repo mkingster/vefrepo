@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "article"
+        "sidebar";
+    gap: 40px;
+    margin-right: 40px;
+    align-items: start;
+    /* gemini said align-items would fix the sidebar
+    not scrolling with the page, and its fix worked */
+}
+
+@media (min-width: 768px) {
+    .content {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "article sidebar";
+        gap: 60px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .content {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "article sidebar";
+        gap: 60px;
+    }
+}
+
+/* intro&header stuff */
+.article {
+    grid-area: article;
+    padding: 40px 0 60px;
+}
+
+.article h1 {
+    font-family: 'Charter', Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-family: 'Charter', Georgia, serif;
+    font-size: 22px;
+    color: #6b6b6b;
+}
+
+.articlephoto {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* body text settings */
+.article-body {
+    font-family: 'Charter', Georgia, serif;
+    font-size: 20px;
+}
+.article-body p {
+    margin-bottom: 22px;
+}
+.article-body h2 {
+    font-size: 26px;
+    margin: 1.6em 0 .6em;
+}
+.article-body h3 {
+    font-size: 22px;
+    margin: 1.4em 0 .5em;
+}
+
+/* mobile */
+.sidebar {
+    grid-area: sidebar;
+    padding: 40px 0 60px;
+    border-top: 1px solid #e6e6e6;
+}
+/* desktop */
+@media (min-width: 768px) {
+    .sidebar {
+        border-left: 1px solid #e6e6e6;
+        padding: 40px 0px 60px 40px;
+        position: sticky;
+        top: 24px;
+        border-top: none;
+    }
+}
+
+/* sidebar stuff */
+.sidebar h4 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: #242424;
+    margin-bottom: 14px;
+}
+
+.chapter-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 28px;
+}
+/* link text */
+.chapter-list li a {
+    display: block;
+    font-size: 14px;
+    color: #6b6b6b;
+    padding: 6px 10px;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+/* text text */
+.chapter-list li p {
+    display: block;
+    font-size: 14px;
+    color: #6b6b6b;
+    padding: 0 10px;
+    line-height: 1.4;
+}
+.chapter-list li a:hover {
+    background: #f9f9f9;
+    color: #242424;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #e6e6e6;
+    margin: 20px 0;
+}
+
+/* stuff for dropdowns */
+.sidebar details {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0;
+}
+.sidebar details summary {
+    font-size: 14px;
+}
+.sidebar details p {
+    font-size: 13px;
+    color: #6b6b6b;
+}
