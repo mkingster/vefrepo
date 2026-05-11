@@ -7,3 +7,5 @@ this is my repo for VEFÞ1VG05AU
 - [verkefni 3.1](verkefni-3/v3.1)
 - [verkefni 4.1](verkefni-4/v4.1)
 - [verkefni 5](verkefni-5-nemendur)
+- [verkefni 6](verkefni-6)
+- [verkefni 7, lokaverkefni](verkefni-7)
